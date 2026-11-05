@@ -15,13 +15,9 @@
 
 ## 安装
 
-从 [Releases](https://github.com/BeiSheng2333/dsh-send-mode/releases) 下载 `dsh-send-mode-1.0.0.tgz`：
+在 DSH 的「插件」管理界面中选择本仓库目录安装；或下载 [Releases](https://github.com/BeiSheng2333/dsh-send-mode/releases) 中的 `dsh-send-mode-1.0.0.tgz` 后添加。安装后按提示重载或重启 DSH。
 
-```bash
-dsh plugin --profile desktop add ./dsh-send-mode-1.0.0.tgz
-```
-
-也可以在 DSH 插件管理器中选择本仓库目录安装。安装后按提示重载或重启 DSH。
+本插件是纯客户端 bundle，安装后会向当前 profile 的 bundle 列表加入 `dsh-send-mode`，不需要额外配置。
 
 ## 结构
 
