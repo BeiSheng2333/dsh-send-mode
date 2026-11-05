@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-send-mode
+      name: 'dsh-send-mode'

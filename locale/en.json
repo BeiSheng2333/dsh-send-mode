@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Send mode",
+    "description": "Switch how messages are sent while the agent is running: queue or steer."
+  }
+}

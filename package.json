@@ -1,0 +1,62 @@
+{
+  "name": "dsh-send-mode",
+  "version": "1.0.0",
+  "description": "Queue/steer switch in the DeepSeek Harness composer: choose what Enter and Send do while the agent is running.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "composer",
+    "queue",
+    "steer",
+    "ui"
+  ],
+  "author": "BeiSheng2333",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeiSheng2333/dsh-send-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BeiSheng2333/dsh-send-mode/issues"
+  },
+  "homepage": "https://github.com/BeiSheng2333/dsh-send-mode#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
